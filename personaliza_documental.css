@@ -1,0 +1,29 @@
+body {
+    background-image: url("Imagenes/fondo_docuental.jpg"); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* Que no se repita en mosaico */
+    background-size: cover; /* Hace que la imagen ocupe toda la pantalla */
+    background-position: center; /* Centra la imagen */
+}
+
+#parrafo1{
+    margin:auto;
+    font-size: 19px;
+}
+
+.situaciones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.foto1{
+    background-color: rgb(23, 23, 36); /* Fondo de color marrón rojizo */
+    border: 1px solid #ffffff;             /* Borde gris claro de 1px */
+    padding: 10px;                      /* Espacio interno entre el contenido y el borde */
+    border-radius: 8px;                 /* Esquinas redondeadas */
+    width: 200px;                       /* Ancho fijo de 200px */
+}
+
+#lista1{
+    color: #ffffff;
+}

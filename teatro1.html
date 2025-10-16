@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro del Libertador General San Martín</title>
+    <link rel="stylesheet" href="teatro1.css">
+</head>
+
+<body>
+    <!-- Botones de navegación -->
+    <button class="nav-btn izquierda" onclick="moverIzquierda()">⟵</button>
+    <button class="nav-btn derecha" onclick="moverDerecha()">⟶</button>
+
+    <div class="presentacion" id="presentacion">
+    <!-- PORTADA -->
+    <section class="slide portada">
+        <h1>TEATRO DEL<br>LIBERTADOR<br>GENERAL SAN MARTÍN</h1>
+        <p>Thynk Unlimited<br>@reallygreatsite</p>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="slide texto-izquierda">
+        <div class="contenido">
+        <div class="texto">
+            <h2>Ubicación e importancia</h2>
+            <p>El Teatro del Libertador General San Martín es uno de los edificios más importantes de la ciudad de Córdoba y un símbolo de su vida cultural. Está ubicado en la Avenida Vélez Sarsfield 365, en pleno centro de la ciudad.</p>
+            <a href="https://es.wikipedia.org/wiki/Teatro_del_Libertador_General_San_Mart%C3%ADn" target="_blank">Wikipedia</a>
+        </div>
+        <img src="Imagenes/teatro1.jpg" alt="Teatro del Libertador">
+        </div>
+    </section>
+
+    <!-- CONSTRUCCIÓN -->
+    <section class="slide texto-derecha">
+        <div class="contenido">
+        <img src="Imagenes/teatro2.png" alt="Interior del teatro">
+        <div class="texto">
+            <h2>Construcción e inauguración</h2>
+            <p>Fue inaugurado el 26 de abril de 1891, luego de cuatro años de construcción. El proyecto fue diseñado por el arquitecto italiano Francesco Tamburini y el ingeniero Giuseppe Franceschi. Su estilo arquitectónico es italianizante y ecléctico, inspirado en los grandes teatros líricos de Europa, especialmente la Ópera de París.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- CAMBIOS DE NOMBRE -->
+    <section class="slide texto-izquierda">
+        <div class="contenido">
+        <div class="texto">
+            <h2>Cambios de nombre</h2>
+            <p>En sus primeros años se llamó Teatro Nuevo, luego pasó a ser Teatro Rivera Indarte, y en 1950 recibió su nombre actual en honor al General José de San Martín. En 1956 volvió a su denominación anterior, pero finalmente en 1973 se estableció oficialmente como Teatro del Libertador General San Martín.</p>
+        </div>
+        <img src="Imagenes/teatro3.jpeg" alt="Salón principal">
+        </div>
+    </section>
+
+    <!-- ESTRUCTURA -->
+    <section class="slide texto-derecha">
+        <div class="contenido">
+        <img src="Imagenes/teatro4.jpg" alt="Estructura del teatro">
+        <div class="texto">
+            <h2>Estructura y capacidad</h2>
+            <p>La sala principal tiene forma de herradura y una capacidad aproximada para 1.000 espectadores. Además, cuenta con otras salas más pequeñas, como la Luis de Tejeda y la Rafael Grisolía, donde se realizan obras teatrales, ensayos y actividades culturales.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- EVENTOS -->
+    <section class="slide texto-izquierda">
+        <div class="contenido">
+        <div class="texto">
+            <h2>Eventos y actividades destacadas</h2>
+            <p>Durante su historia, el teatro fue escenario de importantes presentaciones de ópera, ballet, conciertos sinfónicos y festivales internacionales. En 2019 fue una de las sedes del VIII Congreso Internacional de la Lengua Española, lo que reafirmó su importancia nacional e internacional.</p>
+        </div>
+        <img src="Imagenes/teatro5.jpg" alt="Evento cultural">
+        </div>
+    </section>
+
+    <!-- RESTAURACIONES -->
+    <section class="slide texto-derecha">
+        <div class="contenido">
+        <img src="Imagenes/teatro6.png" alt="Restauración del teatro">
+        <div class="texto">
+            <h2>Restauraciones y conservación</h2>
+            <p>En los últimos años, el edificio fue restaurado y modernizado, conservando su estructura original pero incorporando tecnología de sonido, iluminación y seguridad. También funciona allí el Museo del Teatro y de la Música “Cristóbal Aguilar”.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- ACTUALIDAD -->
+    <section class="slide texto-izquierda">
+        <div class="contenido">
+        <div class="texto">
+            <h2>Actualidad</h2>
+            <p>Hoy, el Teatro del Libertador continúa siendo el principal centro artístico de Córdoba, sede de la Orquesta Sinfónica, el Ballet Oficial, el Coro Polifónico y otros cuerpos estables de la provincia. Es un lugar que combina historia, arte y cultura, manteniendo viva la tradición teatral de la ciudad.</p>
+        </div>
+        <img src="Imagenes/teatro7.jpg" alt="Teatro actual">
+        </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="slide final">
+        <h2>GRACIAS POR LEER</h2>
+        <p>Thynk Unlimited<br>@reallygreatsite</p>
+    </section>
+    </div>
+
+    <script>
+    const presentacion = document.getElementById("presentacion");
+    function moverDerecha() {
+        presentacion.scrollBy({ left: window.innerWidth, behavior: "smooth" });
+    }
+    function moverIzquierda() {
+        presentacion.scrollBy({ left: -window.innerWidth, behavior: "smooth" });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* === Configuración general === */
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background: #400000;
+    font-family: "Poppins", sans-serif;
+}
+
+/* === Contenedor principal === */
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: max-content;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+/* === Cada “diapositiva” === */
+.slide {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === Portada === */
+.portada {
+    background: #5a0b0b;
+    flex-direction: column;
+    text-align: center;
+}
+
+.portada h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+.portada p {
+    font-size: 22px;
+    color: #ddd;
+}
+
+/* === Secciones con texto e imagen === */
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.contenido img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.texto {
+    width: 45%;
+}
+
+.texto h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #fff;
+    border-bottom: 3px solid #ffcccc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.texto p {
+    font-size: 18px;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.texto a {
+    color: #ffcccc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.texto a:hover {
+    text-decoration: underline;
+}
+
+/* === Alternancia de colores === */
+.texto-izquierda { background: #800000; }
+.texto-derecha { background: #a32f2f; }
+
+/* === Final === */
+.final {
+    background: #3d0f0f;
+    flex-direction: column;
+    text-align: center;
+}
+
+.final h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.final p {
+    font-size: 22px;
+    color: #ddd;
+}
+
+/* === Botones de navegación === */
+.nav-btn {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    font-size: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+.nav-btn.izquierda { left: 20px; }
+.nav-btn.derecha { right: 20px; }
+
+/* === Adaptación para celulares === */
+@media (max-width: 900px) {
+    body { overflow-y: auto; }
+    .presentacion {
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    }
+    .slide {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+    }
+    .contenido {
+    flex-direction: column;
+    width: 100%;
+    }
+    .texto, .contenido img {
+    width: 100%;
+    }
+    .contenido img {
+    margin-top: 20px;
+    width: 90%;
+    }
+    .texto h2 { font-size: 28px; }
+    .texto p { font-size: 16px; }
+    .portada h1 { font-size: 42px; }
+    .final h2 { font-size: 36px; }
+
+  /* Ocultar botones en móvil */
+    .nav-btn { display: none; }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viaje Educativo - Colegio Gral. Belgrano</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    header, footer { background: #f2f2f2; padding: 15px; text-align: center; }
+    section { margin: 20px 0; }
+    .lugares, .fotos { display: flex; flex-wrap: wrap; gap: 15px; }
+    .card { border: 1px solid #ccc; padding: 10px; border-radius: 8px; width: 200px; }
+    button { background: #007BFF; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Viaje Educativo - Colegio Gral. Belgrano</h1>
+    <h2>Todo el colegio</h2>
+  </header>
+
+  <!-- Materias involucradas -->
+  <section>
+    <h3>Materias involucradas</h3>
+    <ul>
+      <li>Historia</li>
+      <li>Geografía</li>
+      <li>Biología</li>
+      <li>Lengua</li>
+    </ul>
+  </section>
+
+  <!-- Motivo del viaje -->
+  <section>
+    <h3>Motivo del viaje</h3>
+    <p>El viaje tiene como objetivo enriquecer los conocimientos adquiridos en clase a través de experiencias directas en distintos lugares de interés.</p>
+  </section>
+
+  <!-- Lugares de visita -->
+  <section>
+    <h3>Lugares de la visita</h3>
+    <ul>
+      <li>Museo de Ciencias Naturales</li>
+      <li>Reserva Ecológica</li>
+      <li>Centro Histórico</li>
+    </ul>
+  </section>
+
+  <!-- Fotos de lugares (solo imágenes) -->
+  <section>
+    <h3>Fotos de los lugares</h3>
+    <div class="fotos">
+      <img src="foto1.jpg" alt="Lugar 1" width="200">
+      <img src="foto2.jpg" alt="Lugar 2" width="200">
+      <img src="foto3.jpg" alt="Lugar 3" width="200">
+    </div>
+  </section>
+
+  <!-- Fotos con info y botón -->
+  <section>
+    <h3>Galería de lugares con información</h3>
+    <div class="lugares">
+      <div class="card">
+        <img src="foto1.jpg" alt="Museo" width="180">
+        <p>Museo de Ciencias Naturales - Exhibiciones únicas sobre dinosaurios y fósiles.</p>
+        <button>Ver más</button>
+      </div>
+      <div class="card">
+        <img src="foto2.jpg" alt="Reserva" width="180">
+        <p>Reserva Ecológica - Recorrido por senderos y observación de fauna.</p>
+        <button>Ver más</button>
+      </div>
+      <div class="card">
+        <img src="foto3.jpg" alt="Centro Histórico" width="180">
+        <p>Centro Histórico - Recorrido por la plaza principal y monumentos.</p>
+        <button>Ver más</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Alumno: [Tu Nombre] | Curso: [Tu Curso] | Profesores: [Nombres]</p>
+  </footer>
+
+</body>
+</html>
