@@ -1,0 +1,107 @@
+body{
+    background-color: #ffffff;
+    color: #0D1613;
+}
+
+.seccion1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+}
+
+.cuadro_de_img{
+    border: 4px solid #959592;
+    image-orientation: from-image;
+    border-style:dashed;
+
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.cuadro_de_titulo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.cuadro_de_info_1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.cuadro_de_img, .cuadro_de_titulo, .cuadro_de_info_1, .cuadro_de_parrafo1, .cuadro_de_parrafo2, .cuadro_de_parrafo3, .cuadro_de_titulo_2{
+    text-align: center;
+}
+
+#p_unico{
+    font-size: 20;
+}
+
+.cuadro_de_parrafo1, .cuadro_de_parrafo2, .cuadro_de_parrafo3{
+    font-size: 25px;
+}
+
+.Lugar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.visita{
+    background-color: #486D90;/*Fondo de color gris claro*/
+    border: 4px solid #1F3036;             /* Borde gris claro de 1px */
+    padding: 10px;    /* Espacio interno entre el contenido y el borde */
+    border-radius: 8px;                 /* Esquinas redondeadas */
+    width: 200px;                          /* Ancho fijo de 200px */
+    height: 320px;                   /* define la altura del cuadro */  
+    margin:auto;
+    font-size: 19px;                     
+}
+
+.visita button {
+    display: block;
+    margin: 10px auto 10px auto; /* arriba 10px, abajo 0, centrado */
+}
+
+.visita:hover {
+    transform: scale(1.05); /* se agranda un poco */
+    transition: 0.3s;       /* animación suave */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+button { 
+    background: #ffffff;
+    color: rgb(0, 0, 0); border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px; 
+    text-align: center;
+}
+    
+button:hover { 
+    background: #000000;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+
+h2{
+    font-size: 35px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+footer {
+    margin-top: 60px;  /* separa el footer hacia abajo */
+    padding: 15px;
+    text-align: center;
+    background: #a4999999; /* fondo semitransparente para destacar */
+    color: rgb(152, 150, 150);
+    border-radius: 8px;
+}
